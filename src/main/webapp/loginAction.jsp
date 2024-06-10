@@ -25,7 +25,8 @@
 		else if(result == 0){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("location.href = 'main.jsp'");
+			script.println("alert('비밀번호가 틀립니다.')");
+			script.println("history.back()");
 			script.println("</script>");
 		}
 		else if(result == -1){
