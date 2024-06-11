@@ -14,10 +14,10 @@
 </head>
 <body>
 	<%
-	String userID = null;
-	if (session.getAttribute("userID") != null) {
-		userID = (String) session.getAttribute("userID");
-	}
+		String userID = null;
+		if (session.getAttribute("userID")!=null){
+			userID=(String)session.getAttribute("userID");
+		}
 	%>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
@@ -36,7 +36,7 @@
 					</li>
 				</ul>
 				<%
-				if (userID == null) {
+					if (userID == null) {
 				%>
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item dropdown"><a
@@ -49,7 +49,7 @@
 						</ul></li>
 				</ul>
 				<%
-				} else {
+					} else {
 				%>
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item dropdown"><a
@@ -61,7 +61,7 @@
 						</ul></li>
 				</ul>
 				<%
-				}
+					}
 				%>
 
 			</div>
@@ -74,15 +74,14 @@
 					style="text-align: center; border: 1px solid #dddddd">
 					<thead>
 						<tr>
-							<th style="background-color: #eeeeee; text-align: center;">Community
+							<th colspan="2" style="background-color: #eeeeee; text-align: center;">Community
 								Board</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td><input type="text" class="form-control"
-								placeholder="Enter Title" name="bbsTitle" maxlength="50">Summarize
-								your topic in a few words.</td>
+								placeholder="Enter Title" name="bbsTitle" maxlength="50">Summarize your topic in a few words.</td>
 						</tr>
 						<tr>
 							<td><textarea class="form-control"
@@ -91,7 +90,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<input type="submit" class="btn btn-primary pull-right" value="Post"></a>
+				<input type="submit" class="btn btn-primary pull-right" value="Post">
 			</form>
 		</div>
 	</div>

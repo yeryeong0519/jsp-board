@@ -15,10 +15,10 @@
 <body>
 	<%
 		String userID = null;
-		if(session.getAttribute("userID") != null){
+		if(session.getAttribute("userID")!=null){
 			userID = (String)session.getAttribute("userID");
 		} 
-		if (userID == null){
+		if(userID == null){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('Please sign in first to continue...')");
@@ -37,18 +37,18 @@
 			if (result == -1){
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
-				script.println("alert('Failed to upload your post :()')");
+				script.println("alert('Failed to upload your post')");
 				script.println("history.back()");
 				script.println("</script>");
 			}else{
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
+				script.println("alert('Post successfully submitted!')");
 				script.println("location.href = 'bbs.jsp'");
 				script.println("</script>");
 			}
 		}
 	}
 	%>
-
 </body>
 </html>
