@@ -10,9 +10,12 @@
 
 #### 2. 작업 환경
 🍎운영 체제: macOS 
+
 🌞개발 도구:
 IDE: Eclipse IDE for Enterprise Java Developers 
+
 🐱서버: Apache Tomcat 9.0.74 
+
 🐬데이터베이스: mySQL 
 
 #### 3. 기술 스택
