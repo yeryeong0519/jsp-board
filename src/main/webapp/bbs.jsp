@@ -14,11 +14,11 @@
 </head>
 <body>
 	<%
-	String userID = null;
-	if (session.getAttribute("userID") != null) {
-		userID = (String) session.getAttribute("userID");
-	}
-	%>
+		String userID = null;
+		if(session.getAttribute("userID") != null){
+			userID = (String)session.getAttribute("userID");
+		}
+		%>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="main.jsp">Green Garden</a>
@@ -36,7 +36,7 @@
 					</li>
 				</ul>
 				<%
-				if (userID == null) {
+					if(userID == null){
 				%>
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item dropdown"><a
@@ -49,7 +49,7 @@
 						</ul></li>
 				</ul>
 				<%
-				} else {
+					}else{	
 				%>
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item dropdown"><a
@@ -60,8 +60,8 @@
 									out</a></li>
 						</ul></li>
 				</ul>
-				<%
-				}
+				<%	
+					}
 				%>
 
 			</div>
@@ -69,30 +69,25 @@
 	</nav>
 	<div class="container">
 		<div class="row">
-			<form method="post" action="writeAction.jsp">
-				<table class="table table-striped"
-					style="text-align: center; border: 1px solid #dddddd">
-					<thead>
-						<tr>
-							<th style="background-color: #eeeeee; text-align: center;">Community
-								Board</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><input type="text" class="form-control"
-								placeholder="Enter Title" name="bbsTitle" maxlength="50">Summarize
-								your topic in a few words.</td>
-						</tr>
-						<tr>
-							<td><textarea class="form-control"
-									placeholder="Share your Thoughts... Need Advice? Type your Question..." name="bbsContent" maxlength="2048" style="height: 350px;"></textarea>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<input type="submit" class="btn btn-primary pull-right" value="Post"></a>
-			</form>
+			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+				<thead>
+					<tr>
+						<th style="background-color: #eeeeee; text-align: center;">Number</th>
+						<th style="background-color: #eeeeee; text-align: center;">Title</th>
+						<th style="background-color: #eeeeee; text-align: center;">Writer</th>
+						<th style="background-color: #eeeeee; text-align: center;">Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Hello!</td>
+						<td>eclipse</td>
+						<td>2024-06-11</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href = "write.jsp" class = "btn btn-primary pull-right">글쓰기</a>
 		</div>
 	</div>
 	<script
