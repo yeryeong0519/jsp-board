@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import = "java.io.PrintWriter" %>
+	pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +32,7 @@
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="main.jsp">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="bbs.jsp">List</a>
+					<li class="nav-item"><a class="nav-link" href="main.jsp">List</a>
 					</li>
 				</ul>
 				<%
@@ -56,18 +56,40 @@
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-bs-toggle="dropdown" aria-expanded="false">member</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="logoutAction.jsp">sign out</a></li>
+							<li><a class="dropdown-item" href="logoutAction.jsp">sign
+									out</a></li>
 						</ul></li>
 				</ul>
 				<%	
 					}
 				%>
-				
+
 			</div>
 		</div>
 	</nav>
-	
-
+	<div class="container">
+		<div class="row">
+			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+				<thead>
+					<tr>
+						<th style="background-color: #eeeeee; text-align: center;">Number</th>
+						<th style="background-color: #eeeeee; text-align: center;">Title</th>
+						<th style="background-color: #eeeeee; text-align: center;">Writer</th>
+						<th style="background-color: #eeeeee; text-align: center;">Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Hello!</td>
+						<td>eclipse</td>
+						<td>2024-06-11</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href = "write.jsp" class = "btn btn-primary pull-right">글쓰기</a>
+		</div>
+	</div>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
