@@ -47,7 +47,7 @@
 		<div class="col-lg-4"></div>
 		<div class="col-lg-4">
 			<div class="jumbotron" style="padding-top: 20px">
-				<form method="post" action="loginAction.jsp">
+				<form method="post" action="joinAction.jsp">
 					<h3>Sign up and get special promotions!</h3>
 
 					<div class="form-group">
@@ -78,7 +78,7 @@
 							name="userEmail" maxlength="20">
 					</div>
 					<input type="submit" class="btn btn-primary form-control"
-						value="로그인">
+						value="Sign up!">
 				</form>
 			</div>
 		</div>
